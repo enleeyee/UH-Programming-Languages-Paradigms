@@ -1,0 +1,10 @@
+What are some of the main differences between statements and expressions? What are the consequences of prefering one over the other?
+
+The main difference between statements and expressions is the fact that expressions evaluate to a value. This value can be ‘None’, 5, Boolean anything that a language declares as a value. Statements do not evaluate anything, they just perform actions/side effects.
+If expressions are overused they can greatly increase the complexity of the code and introduce and make it very hard to read and understand. This can happen because expressions don’t have a clear beginning and end and can be combined indefinitely, losing the expressibility that expressions give if properly used.
+
+On the other hand, if statements are overused they can have side effects that you are not aware of, especially if using a global state and not having a proper check of state flow. Because you can swap expressions that take part in a statement, it is easier to write syntactically correct code that does not perform as intended.
+
+In the end, a balance is needed, and use each for what it is best, since they both bring great advantages but it is important to keep in mind the consequences.
+
+Total[10]: 10

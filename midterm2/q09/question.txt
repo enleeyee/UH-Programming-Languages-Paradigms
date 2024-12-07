@@ -1,0 +1,19 @@
+This code is not in any specific language; it's a pseudo-code.
+
+values = [1, 2, 3]
+factor = 4
+values.foreach { e -> print(e * factor) }
+factor = 7
+
+Is the lambda expression / closure passed to foreach a pure function?
+Explain, giving reason for your observation.
+
+The lambda expression in the given pseudo-code is not a pure function because it depends on an external mutable state (factor) that can change during its execution. A pure function, by definition, should produce the same output for the same input and should not have side effects such as modifying external variables or interacting with mutable state.
+
+In this case, the lambda expression is passed to foreach, where it multiplies each element in values by factor. Initially, factor is set to 4, and the lambda will use this value. However, after factor is updated to 7, any subsequent execution of the lambda (in the next iteration or another invocation) will use the new value of factor, thus affecting the result unpredictably.
+
+This behavior violates the principle of immutability, which is central to pure functions. If the lambda depended only on its parameters and did not reference or modify external variables like factor, it would be considered pure. But here, the lambda’s output is not solely determined by its input but also by the mutable external state, leading to varying results.
+
+To ensure purity, the lambda expression could be rewritten to take factor as an argument, ensuring that it only operates on its input and doesn’t rely on external state. By doing this, we would guarantee that the lambda’s output is entirely deterministic, based only on its parameters, and it would no longer have side effects, making it a pure function.
+
+Total[10]: 10

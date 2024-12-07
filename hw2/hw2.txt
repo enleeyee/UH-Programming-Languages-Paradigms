@@ -1,0 +1,221 @@
+HW2: Due 11:59PM CT October 18
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. What's destructuring in JavaScript?
+                                 
+Destructuring lets you unpack values from an object or array. This technique simplifies the process of working with complex data structures by enabling the extraction of necessary data, which leads to more readable and maintainable code. The feature is widely adopted because it reduces boilerplate code and enhances code expressiveness.
+
+Destructuring is useful not only for the initialization of variables but also for assignment and reassigning values. For example, when applied to objects, destructuring allows you to assign object properties to variables based on their property names. Consider an employee object:
+
+var employee = { firstname: 'Jon', lastname: 'Snow' };
+var { firstname, lastname, dateofbirth } = employee;
+
+Here, the firstname and lastname properties are extracted and assigned to corresponding variables, while dateofbirth remains undefined since it’s not present in the object. Additionally, this pattern can be reused to reassign these variables with values from a different object in one concise step.
+
+Similarly, with arrays, destructuring assigns values to variables based on their position in the array. For instance:
+
+const [firstname, lastname] = ['Jon', 'Snow'];
+
+This example assigns the values 'Jon' and 'Snow' to the variables firstname and lastname respectively. Destructuring can be used again later to assign new array values to the same variables.
+
+Destructuring can also be extended to rename variables during extraction, provide default values if a property or value is missing, and even work seamlessly with function parameters. For instance, destructuring within function parameters enables you to access specific properties of an object directly:
+
+function printPerson({ name, age }) {
+  console.log(name, age);
+}
+
+In this function, only the name and age properties from the passed object are accessed directly, making the code cleaner and more focused.
+
+2. Show an example of destructuring to swap values in two variables.
+
+let a = 10;
+let b = 20;
+
+[a, b] = [b, a];  // Swaps the values of a and b
+
+console.log(a); // prints 20
+console.log(b); // prints 10
+
+3. Show more examples of destructuring.
+
+3a) Destructuring Arrays
+Here we show how to destructure an array without using a loop (as that is a additional feature that we can build on)
+
+const [a, b, c] = [1, 2, 3];
+
+console.log(a); // prints 1
+console.log(b); // prints 2
+console.log(c); // prints 3
+
+Let's say we have an array with each element being a pair of (x, y) coordinates. We can loop through the coordinates array, destructure them, and do something with those values. This makes the code very expressive and removes the ceremony of having to parse out an object or array.
+
+Ex:
+const coordinates = [[0,0], [1,2], [3,3]];
+
+for (const [x,y] of coordinates) {
+    do_something_with_x(x);
+    do_something_with_y(y);
+}
+
+3b) Destructuring with Rest Syntax
+Building on the example of number 2 we don’t have to make a variable to hold every single variable independently, we can assign the rest of the values into a single variable like so:
+
+const [a, b, ...rest] = [10, 20, 30, 40, 50]
+
+console.log(rest); // prints [30, 40, 50]
+
+When destructuring we are not forced to use all the elements, we can choose to ignore what we don't need without unused variable warnings or linting errors.
+
+Ex. 
+const [a, _] = [10, 20];
+
+console.log(a); // prints 10 and does not complain about an unused variable
+
+3c) Skipping Elements During Destructuring
+We can skip over elements that we don’t need. This technique can simplify the extraction process and eliminate warnings about unused variables. 
+
+Ex:
+const [first, , third] = [100, 200, 300];
+console.log(first);  // prints 100
+console.log(third);  // prints 300
+We skipped over the second value (200) by simply leaving a space in the destructuring pattern. 
+
+3d) Destructuring Objects: 
+Example of destructuring values of an object (without using defaults)
+const user = {
+    name: 'marin_yii',
+    age: 21,
+    location: 'Houston'
+};
+
+const { name, age, location } = user;
+
+console.log(name); // prints 'marin_yii'
+console.log(age); // prints 21 
+console.log(location); // prints 'Houston'
+
+Example of destructuring values of an object while changing the name of the variables
+const user = {
+    name: 'marin_yii',
+    age: 21,
+    location: 'Houston'
+};
+
+const { name: userName, age: userAge, location: userLocation } = user;
+
+console.log(userName); // prints 'marin_yii'
+console.log(userAge); // prints 21 
+console.log(userLocation); // prints 'Houston'
+
+Let’s say we want to assign default values to properties when they are missing in the object. Destructuring allows us to initialize default values straightforwardly. 
+
+Ex:
+const person = { name: 'Alice', age: 25 };
+const { name, age, occupation = 'unemployed' } = person;
+
+console.log(name);   	// prints 'Alice'
+console.log(occupation); // prints 'unemployed' since occupation is not in the object
+
+In the example, occupation is given a default value of ‘unemployed’ if the property doesn’t exist in the object being destructured. 
+
+3e) Destructuring Nested Objects 
+Fun fact, we can destructure nested objects too. This is useful when we are working with complex data structures. 
+
+Ex:
+const user = {
+  id: 42,
+  name: 'John',
+  address: {
+	city: 'New York',
+	country: 'USA'
+  }
+};
+
+const { name, address: { city } } = user;
+console.log(name); // prints 'John'
+console.log(city); // prints 'New York'
+
+The nested city property within the address object is extracted while preserving the readability of the code. 
+
+Example when two nested objects have same property name
+
+const users = {
+    user: {
+        name: 'emilio',
+        age: 21 
+    },
+    admin: {
+        name: 'enlai',
+        age: 21 
+    }
+};
+
+const {
+    user: { name: userName, age: userAge },
+    admin: { name: adminName, age: adminAge }
+} = data;
+
+console.log(userName); // prints 'emilio'
+console.log(userAge);  // prints 21 
+console.log(adminName); // prints 'enlai'
+console.log(adminAge);  // prints 40
+
+3f) Function Parameters Destructuring
+Next, we can destructure directly in function parameters to simplify the passing of multiple arguments especially when dealing with objects. 
+
+Ex:
+function greet({ name, age }) {
+  console.log(`Hello ${name}, you are ${age} years old.`);
+}
+
+const user = { name: 'Bob', age: 30 };
+greet(user); // prints 'Hello Bob, you are 30 years old.'
+
+The approach allows us to directly extract specific properties from the passed object, reducing the need to reference the full object in the function body.
+
+3g) Looping and destructuring while taking note of the index
+
+Example of using for...of with the help of entries()
+const array = ['a', 'b', 'c'];
+
+for (const [index, value] of array.entries()) {
+    console.log(`Index: ${index}, Value: ${value}`);
+}
+
+// prints:
+// Index: 0, Value: a
+// Index: 1, Value: b
+// Index: 2, Value: c
+
+Using regular for loop
+const array = ['a', 'b', 'c'];
+
+for (let i = 0; i < array.length; i++) {
+    const [index, value] = [i, array[i]];
+    console.log(`Index: ${index}, Value: ${value}`);
+}
+
+// prints:
+// Index: 0, Value: a
+// Index: 1, Value: b
+// Index: 2, Value: c
+
+
+4. What are some of the restrictions to using destructuring.
+
+When destructing objects, the variable names must match the objects' property names. If there is a mismatch between the object’s property name and the variable name we are trying to access, the value will not be assigned to the variable unless you rename it explicitly. This can be limiting if we want to map object properties to different variable names without manually specifying each one.
+
+An important restriction comes when using the ...rest syntax since rest must be the last element when destructuring. This constraint exists because ...rest takes, well, the rest of the object or array, and adding any other variables afterward would result in a mismatch between the number of variables declared and the number of available values to assign.
+
+Destructuring is designed for iterable data structures like arrays and objects that have properties. You cannot destructure a non-iterable data type (as a number, boolean, or null) because these types cannot be broken down into components or iterated over. Thus, this restriction makes destructuring impractical for use with primitive types unless wrapped in an object. 
+
+When you destructure a value that does not exist in an object, the variable will be undefined. So, you can provide a default value to ensure the variables get meaningful value instead of undefined. Sadly, this default value assignment only works when the value is undefined. If the property exists but holds a null value, the default value will be ignored and the null will remain the value. 
+
+Finally, destructuring in JS doesn’t support dynamic or computed keys out of the box. Destructuring works well when we know the exact property names ahead of time, but in cases where the keys are determined at runtime or computed dynamically, the feature becomes less effective. Thus, we have to resort to traditional methods like bracket notation to access properties based on dynamic keys. 
+
+
+Some examples are taken or based from here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+Total[10]: 10

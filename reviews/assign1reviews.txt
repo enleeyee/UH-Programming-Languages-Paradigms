@@ -1,0 +1,154 @@
+[Reviewed 09/16/24 07:07 AM CDT]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 09/15/24 08:06 AM CDT]
+synopsis: joint work
+
+details:
+
+"significant lessons I learned was" What about the other member of our team? This is a joint work, not an individual work.
+
+------------------------------------------------------------------------------
+[Reviewed 09/13/24 14:35 PM CDT]
+synopsis: good work so far
+
+details:
+
+Good work so far. Done with coding. Let's focus now on the questions in assign1.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 09/13/24 04:02 AM CDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/12/24 09:28 AM CDT]
+synopsis: good so far
+
+details:
+
+Good so far. Let's move forward to the next function.
+
+
+------------------------------------------------------------------------------
+[Reviewed 09/12/24 05:35 AM CDT]
+synopsis~: missing build.sh
+
+details:
+
+Missing build.sh.
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/11/24 04:44 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Go:
+done
+
+Let's move forward to the third language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/10/24 10:41 AM MDT]
+synopsis: too much code
+
+details:
+
+Too much code. We should be using built in functions instead of creating all these functions.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/10/24 04:37 AM MDT]
+synopsis~: avoid mutation
+
+details:
+
+Python:
+done
+
+Go:
+Let's avoid mutating values when using the functional style
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 09/09/24 11:42 AM MDT]
+synopsis: good so far
+
+details:
+
+Python: Please see suggestions in files.
+
+Go: Please see suggestions in files.
+
+Let's proceed to the next function.
+
+------------------------------------------------------------------------------
+[Reviewed 09/09/24 05:48 AM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+
+------------------------------------------------------------------------------
+[Reviewed 09/08/24 06:45 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Please see suggestions in files.
+
+Let's get started with the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/07/24 09:53 AM MDT]
+synopsis: let's move forward to the next step
+
+details:
+
+Good work so far. Please see suggestions in files.
+
+Let's move forward to the functional style code.
+
+------------------------------------------------------------------------------
+[Reviewed 09/07/24 05:14 AM MDT]
+synopsis~: nice start
+
+details:
+
+Nice start. Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 09/06/24 13:47 PM EDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+✓Python
+✓Go
+✓Scala
+
+Please place code inside a language directory, for example mylang subdirectory if the language name is mylang.
+
+------------------------------------------------------------------------------

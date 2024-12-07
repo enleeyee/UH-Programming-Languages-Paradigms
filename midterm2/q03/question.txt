@@ -1,0 +1,16 @@
+What are tuples and what's special about them? 
+
+Where would we use them?
+
+Give a few examples of usage of tuples from two languages that we covered in 
+this course (give code in separate files with proper extensions).
+
+A tuple is a data structure used to group a fixed number of elements, which may be of different types, into a single compound value. Tuples are immutable in most languages, meaning their values cannot be altered after creation. They are often used for lightweight and temporary data grouping, such as returning multiple values from a function or storing structured data in a compact form.
+
+Tuples are special because they combine heterogeneity with immutability, allowing values of different types to be grouped together while ensuring data integrity. They are versatile and useful in scenarios like function return types and dictionary keys. Many languages also allow tuples to be destructured efficiently, which makes code concise and readable.
+
+In Haskell, tuples are commonly used to return multiple values from a function without defining a custom data structure. For example, a function might return a tuple like (“Houston”, “Texas”, 77000) to represent city, state, and zip code, enabling easy destructuring with pattern matching. Using tuples in this way keeps the code simple and avoids unnecessary complexity.
+
+In Python, tuples are hashable and immutable, making them suitable as dictionary keys for representing composite relationships. For instance, a tuple (1, “John”, “Smith”) can be used as a key to store a grade for a student in a dictionary. This allows multiple attributes to be combined into a unique key for efficient lookups, making tuples an intuitive and compact solution for such data structures.
+
+Total[10]: 10

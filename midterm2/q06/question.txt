@@ -1,0 +1,11 @@
+Functional programming languages insist on pure functions, no-side effects, and
+immutability. Why is that so critical?
+
+Functional programming languages prioritize pure functions because they ensure that a function’s output is determined solely by its inputs, without relying on or altering external state. This property makes pure functions predictable and easier to test, debug, and reason about, as their behavior remains consistent regardless of the program’s state or execution context.
+
+No-side effects are critical because they prevent unintended modifications to external systems or states, such as modifying global variables or writing to files during a computation. By avoiding side effects, functional programs maintain better modularity and isolation, making it easier to compose functions and understand their interactions without unexpected interdependencies.
+
+Immutability ensures that data cannot be modified after creation, which prevents bugs caused by unintended state changes and supports safer concurrent programming. When data is immutable, multiple operations can safely read and manipulate copies of the same data without conflict, enabling parallelism and reducing the complexity of managing shared state.
+
+Total[10]: 5
+Need to tie this to how functional programming relies on lazy evaluation and how lazy evaluation relies on purity of functions.

@@ -1,0 +1,54 @@
+HW4: Due 11:59PM CT December 6
+
+***Please review the top part of ../hw1/hw1.txt***
+***There will be no reviews for this Homework***
+***Please remember to follow the things that were emphasized throughout this course on writing***
+***Please see the details in the requestReviews.txt file***
+
+Feel free to give answers collectively, and also if you want to, you can call 
+out something specific to yourself different from your pair.
+
+(a) What languages did you use in this course? 
+
+We used a total of 11 different languages throughout this course. For assign1, we worked with Go, Python, and Scala. In assign2, we used Ocaml, Erlang, and Haskell. Assign3 focused on Kotlin and Ruby. For assign4, we utilized JavaScript and F#. Finally, in hw3, we explored Clojure.
+
+(b) Which one of those you used for the first time?
+
+Emilio:
+Scala, Ocaml, Erlang, Haskell, Kotlin, Ruby, F#, Clojure
+
+Enlai: 
+Clojure, Erlang, F#, Go, Haskell, Kotlin, Ocaml, Ruby, Scala
+
+(c) What are your impressions about all the languages that you used (compare
+and contrast in your view)?
+
+Python and Erlang provided straightforward and intuitive build and execution experience. Python’s interpreter allowed direct script execution with minimal setup. Erlang had a smooth shell-based setup, simplifying distributed and concurrent programming. In contrast, Kotlin and Clojure relied heavily on build tools like Gradle and Leiningen, requiring detailed configuration and a deeper understanding of their ecosystem.
+
+Go, Python, and Ruby prioritized clean and readable syntax. Python’s simplicity allowed even beginners to write complex code with minimal effort, while Ruby’s flexibility and focus on developer happiness made it perfect for crafting elegant DSLs. Go’s syntax emphasized straightforwardness, making it highly readable in large teams, though at the cost of reduced expressiveness compared to Ruby or Python. Meanwhile, Scala and Haskell, though powerful, were intimidating to us due to their intricate syntactic constructs and feature-rich paradigms.
+
+In terms of functional paradigm, Haskell, Scala, and F# demonstrated their strengths in functional programming. Haskell’s immutability, laziness, and purity made the language ideal for highly predictable computations. Scala effectively blended functional and object-oriented paradigms, which made the language very flexible for us at the expense of simplicity. 
+
+Python and JavaScript shone in terms of community and ecosystem support, with countless libraries and frameworks enabling their use in diverse domains like web development, data science, and machine learning. Kotlin and Scala had strong integration within the JVM ecosystem, benefiting from Java’s rich toolset, though their relatively smaller communities sometimes made troubleshooting harder. Erlang and Ocaml had niche but highly specialized ecosystems, excelling in specific domains such as telecommunications for Erlang and formal verifications for Ocaml.
+
+Go, Erlang, and Haskell excelled in performance for their respective use cases. Go’s efficiency made it an excellent choice for systems programming and cloud-native applications. Erlang handled concurrency and distributed systems with ease, proving its reliability for high-load scenarios. Haskell offered excellent performance for computation-heavy applications but was often impractical for general-purpose use due to its limited ecosystem. Kotlin and Scala performed well in enterprise environments, leveraging the JVM for scalable, high-performance applications.
+
+(d) What did you learn mostly in this course (I'm interested in hearing
+your views, things you realized, things you found interesting, things
+you did not like so much about any particular language, etc.)?
+
+Working with many different languages in this course taught us to approach new languages with a broader perspective. Instead of focusing on syntax comparisons, we learned to think in terms of underlying concepts. This shift in mindset, from trying to replicate specific functions or syntax to understanding the fundamental ideas, was especially helpful when using functional languages for the assignments, which we were the least familiar with.
+
+Emilio pov:
+
+Before this class, I was aware of the existence of functional programming languages, but I found them confusing and difficult to approach. I also assumed that they weren’t commonly used in production or real-world applications. However, learning about the various ways functional programming can be applied, especially in multithreaded applications, has started to change my perspective. Seeing how functional concepts like immutability and higher-order functions can simplify complex problems has helped me understand their value and practicality. That said, it’s still a challenging paradigm for me, as I’m only just beginning to grasp these concepts and how to apply them effectively.
+
+Another thing I’ve changed my perspective on is TDD. Initially, I had a very negative view of it, shaped more by opinions I’d read online than by personal experience. I thought my lack of experience would lead to constantly rewriting tests, overlooking edge cases, and feeling like TDD was more of a hindrance than a help. Now, however, I for sure see its value. I feel encouraged to start with a few quick prototypes to better understand the domain and define the interface I want. Once that’s clear, I can discard the prototype and begin again with TDD, which helps me approach problems more systematically and with greater confidence.
+
+Enlai pov:
+
+Before enrolling in Paradigms, I took the Software Design course, where I was introduced to functional programming, which I found intriguing. However, during my internship, I struggled to see practical applications for functional programming in real-world projects. This course showed me how valuable and effective functional programming can be, particularly in creating readable, maintainable code by leveraging immutability and higher-order functions. It shifted my perspective on its utility and encouraged me to explore its potential further.
+
+Learning languages like F# and Scala was particularly interesting because of their strong alignment with functional programming principles. In contrast, Python and Ruby felt more accessible and visually intuitive but often required external libraries to perform tasks that some languages handle natively. My personal favorite from the course was Erlang, primarily due to its straightforward build process and syntax, even though I know syntax preference shouldn’t play a significant role in evaluating a language’s utility.
+
+Total[10]: 10

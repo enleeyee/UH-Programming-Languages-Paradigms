@@ -1,0 +1,11 @@
+(library
+  (name iterative)
+  (modules Iterative))
+
+(library
+  (name recursive)
+  (modules Recursive))
+
+(library
+  (name tailRecursive)
+  (modules TailRecursive))

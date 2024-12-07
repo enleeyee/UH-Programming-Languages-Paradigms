@@ -1,0 +1,41 @@
+cabal-version:      3.4
+name:               uhplfib
+version:            0.1.0.0
+author:             marin_yii
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+library
+    hs-source-dirs:   src
+    exposed-modules:  Fibonacci.Iterative Fibonacci.Recursive Fibonacci.TailRecursive
+    build-depends:    base >= 4.17.0.0 && < 4.21
+    default-language: GHC2021
+
+test-suite iterative 
+    import:           warnings
+    main-is:          IterativeTest.hs
+    other-modules:    FibonacciTest
+    default-language: GHC2021
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    build-depends:    base >= 4.17.2.1, HUnit >= 1.6.0.0, uhplfib
+
+test-suite recursive 
+    import:           warnings
+    main-is:          RecursiveTest.hs
+    other-modules:    FibonacciTest
+    default-language: GHC2021
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    build-depends:    base >= 4.17.2.1, HUnit >= 1.6.0.0, uhplfib
+
+test-suite tail-recursive 
+    import:           warnings
+    main-is:          TailRecursiveTest.hs
+    other-modules:    FibonacciTest
+    default-language: GHC2021
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    build-depends:    base >= 4.17.2.1, HUnit >= 1.6.0.0, uhplfib

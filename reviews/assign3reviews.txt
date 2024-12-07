@@ -1,0 +1,209 @@
+[Reviewed 10/31/24 04:29 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/24 11:23 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/24 04:36 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 16:57 PM MDT]
+synopsis: let's tweak and move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's move forward to the next two tests.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 08:36 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 04:58 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's nove forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/28/24 03:03 AM CDT]
+synopsis: Good so far
+
+details:
+
+Ruby:
+
+done
+
+Let's get started with the first line of DSL in the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/24 17:53 PM CDT]
+synopsis: let's drop the []
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/24 08:10 AM CDT]
+synopsis: let's make it less verbose
+
+details:
+
+Please see suggestions in files.
+
+Let's get started on the first line of the DSL in the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 10/26/24 08:57 AM CDT]
+synopsis: let's move forward to the next test
+
+details:
+
+Please see suggestions in files. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/26/24 05:53 AM CDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/25/24 04:43 AM CDT]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/24/24 16:42 PM MDT]
+synopsis: let's make it fluent
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/24/24 08:57 AM CEST]
+synopsis: good so far
+
+details:
+
+Good so far. Please see suggestions in files. Let's move to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/24 21:00 PM CEST]
+synopsis: let's move forward to the next test
+
+details:
+
+Please see suggestions in files. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/24 20:26 PM CEST]
+synopsis: let's move forward to the next test
+
+details:
+
+Good so far. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/24 07:54 AM CEST]
+synopsis: let's reduce the noise
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 20:37 PM CDT]
+synopsis: let's make it fluent
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 15:43 PM CDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 06:52 AM CDT]
+synopsis: let's move forward
+
+details:
+
+Changed code. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/20/24 18:43 PM CDT]
+synopsis: let's drop the DSL right there into the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/20/24 05:48 AM MDT]
+synopsis: We are awesome
+
+details:
+
+We are awesome, we can write a lot of code very quickly. 
+
+But, once we do, we will pause, smile, and delete, and then take one small step so we can see how that first step feels.
+
+1. A nice little canary test
+2. A nice little test to tease out one line of DSL
+
+Not to show we can write a lot of bad code quickly, but we are wise to take the time to incrementally develop and entertain the thought that we could actually create fluent code by slowing down and iterating a few times on the first step.
+
+------------------------------------------------------------------------------
+[Reviewed 10/18/24 17:19 PM EDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+✓Ruby
+-Kotlin
+
+Please place code inside a language directory, for example mylang subdirectory if the language name is mylang.
+------------------------------------------------------------------------------

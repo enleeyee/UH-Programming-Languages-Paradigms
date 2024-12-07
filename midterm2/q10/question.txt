@@ -1,0 +1,13 @@
+What are the characteristics that a language should have in order for it to be a good choice to serve as a host for creating internal DSLs? Mention three languages that meet those expectations and mention three that don't.
+
+DSLs should have a highly expressive syntax and minimal boilerplate. This allows DSLs to resemble natural language or specialized notation, making them easier to read and write. For example, languages like Ruby and Kotlin provide flexible syntax and features like extension functions, which enable fluent interfaces and clean DSL designs.
+
+Another key characteristic is support for functional programming paradigms, such as higher-order functions and immutability, which enable the creation of composable and reusable DSL components. Languages like Haskell and Scala excel in this area, providing rich type systems and functional constructs for building concise, type-safe DSLs.
+
+Metaprogramming capabilities, such as macros or reflection, are also crucial for internal DSLs, as they allow developers to extend language constructs or embed DSL-specific behavior seamlessly. Lisp, with its powerful macro system, and Groovy, with its support for dynamic typing and AST transformations, are well-suited for this purpose. These languages help developers create DSLs that are tightly integrated into the host language.
+
+Languages that support DSL are Ruby for its flexible syntax, support for blocks, and dynamic nature. Kotlin is another great choice as the language provides extension functions, type-safe builders, and lambdas with receivers, which are powerful tools for creating DSLs like Anko. Haskell’s functional programming features and strong type system enables for a highly expressive and compostable DSL. 
+
+Languages that do not support DSL are C for its lack in expressive syntax and functional programming constructs necessary for DSLs, resulting in verbose and less intuitive DSLs. Go is another example for its emphasis in simplicity and minimalism but does not provide features like higher-order functions and metaprogramming. Perl also struggles with DSL creation because its syntax is too complex and noisy making it difficult for creating DSLs.
+
+Total[10]: 10

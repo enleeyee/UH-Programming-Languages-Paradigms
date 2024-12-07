@@ -1,0 +1,18 @@
+A purely functional language does not permit functions with side-effects. However, a realistic program cannot survive without side-effects. What do pure-functional languages do to get around these concerns? Explain.
+
+Purely functional languages, like Haskell, enforce immutability and avoid side-effects, which ensures predictability and referential transparency. However, real-world programs need to perform actions like I/O operations, state updates, or interactions with external systems—tasks inherently side-effect-driven. To address this, purely functional languages encapsulate side-effects to maintain functional purity.
+
+A Monad is a design pattern used in functional programming to manage side-effects in a controlled and composable way. It wraps values and computations, enabling sequential operations while isolating side-effects. Monads adhere to three laws (associativity, left identity, and right identity), ensuring predictable and reusable behavior.
+
+In Haskell, the IO method encapsulates input/output operations:
+
+main :: IO ()
+main = do
+	name <- getLine       	-- `getLine` produces a side-effect
+	putStrLn ("Hello, " ++ name) -- `putStrLn` is encapsulated in the `IO` Monad
+
+The do notation sequences operations within the IO Monad, isolating side-effects while keeping the rest of the program pure.
+
+Monads allow functional languages to bridge the gap between theoretical purity and practical needs. By isolating side-effects, they ensure predictable and testable core logic while enabling interaction with the real world. Beyond I/O, Monads like Maybe handle nullability, and State manages mutable state safely, providing versatile tools for practical programming.
+
+Total[10]: 10

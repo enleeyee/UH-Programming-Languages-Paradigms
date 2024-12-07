@@ -1,0 +1,102 @@
+[Reviewed 09/05/24 06:37 AM EDT]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 09/04/24 17:31 PM CEST]
+synopsis: let's make this concise and keep the focus on what is relevant
+
+details:
+
+"For example, print("Hello, world!") in Python or int x = 5; in Java are statements." But, we can do print(print("Hello, world")).
+
+"One case that might seem counterintuitive is print(print("Hello, world!"))...." It does, it produces None which is a value.
+
+We are dragging outselves into an area that is totally unnecessary, by bringing in a not-very helpful example. It will be wise to change the example instead of digging deeper into the fallacies.
+
+It will be better to delete and rewrite to keep it short and concise. Remove anything that is extraneous.
+
+What is a statement. An unambiguous example.
+What is an expression. An unambiguous example.
+
+Do different programming styles prefer one over the other.
+
+------------------------------------------------------------------------------
+[Reviewed 09/04/24 07:13 AM CEST]
+synopsis: duplicated response?
+
+details:
+
+The response to part 1 is too large and seems duplicated. Please make sure there is only one response to part 1.
+
+------------------------------------------------------------------------------
+[Reviewed 09/03/24 05:29 AM CEST]
+synopsis: let's check
+
+details:
+
+"For example, print("Hello, world!") in Python or int x = 5; in Java are statements. They execute some operation or affect program flow but don't themselves yield a result that could be used further."
+
+What if we do print(print("Hello, world!")).
+Did you see this: https://groups.google.com/g/uhcsf24pl/c/kDcLgztrN6I/m/XFMQWE3AAAAJ
+
+Are we saying that something is an expression only if the quality of the result meets a particular standard, our judgement as to if that is useful or not by way of our quality judgement?
+
+------------------------------------------------------------------------------
+[Reviewed 09/02/24 06:47 AM CEST]
+synopsis: let's recheck a claim
+
+details:
+
+"For example, print("Hello, world!") in Python...are statements"..."They execute some operation or affect program flow but don't themselves yield a result that could be used further."
+Can I write print(print("Hello, world!"))?
+
+------------------------------------------------------------------------------
+[Reviewed 09/01/24 12:43 PM CEST]
+synopsis: let's clarify
+
+details:
+
+1.
+
+Please spellcheck.
+
+" print("Hello, world!") in Python "
+What if we do the following in Python:
+print(print("Hello, world!"))
+
+"...to print (like 2 + 3 evaluates to 5) that doesnt make it an expression." So expressions are decided based on what we determine to be a good result or not?
+
+"An expression, on the other hand, is any piece of code that evaluates to a value." But we just said it can't be any value, it has to be something that meets our standard, right?
+
+Does one style of programming prefer one (statement) over the other (expression) or vice versa?
+
+2.
+
+Please spellcheck.
+
+
+------------------------------------------------------------------------------
+[Reviewed 08/31/24 08:33 AM MDT]
+synopsis: good start
+
+details:
+
+1.
+
+What if we run the following in Python?
+
+print(print("Hello, world!"))
+
+"They are fundamental to..." Long sentence that combines (rushes) multiple independent thoughts into one. Also, please check grammer.
+
+Nice details about side-effects and consequences.
+
+2.
+
+"Emilio: Disagree" One joint response, please.
+
+------------------------------------------------------------------------------

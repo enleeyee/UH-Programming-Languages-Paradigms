@@ -1,0 +1,68 @@
+Please keep all files related to a homework or an assignment within the appropriate directory. Files checked in outside of specific homework or assignment directory will not be reviewed or graded for that homework/assignment.
+
+Check in and modify files as many times as you like. You will not be able to modify the files after the deadline.
+
+You will work as a pair, both of you are responsible for the completed work in all assignments and homework. Reasonable effort is expected from each person. If you do not check in, you will not receive any scores. When pairing please switch who checks in so there is significant number of check in from each of you.
+
+The deadlines are strict, there will be no extensions. Don't email any code to Venkat or to the mailing list. Your last check in before the deadline will be graded. If your last check in breaks the code, both you and your pair will lose significant points.
+
+Please feel free to ask for frequent reviews. See the reviews/readme.txt file for details on how to ask for reviews.
+
+You can evolve the answers and solutions based on the reviews. Only the latest checkin at the time of review will be looked at. Also the final check in will be the only one graded.
+
+You are still responsible to successfully complete an homework or assignment even if your pair is a no-show. You can request to change pairs at any time and if there is another person in the class willing to pair with you we can make the switch.
+
+A lot of help will be provided in this course, but you have to start early and ask for help along the way.                                                                 	 
+
+Please read the academic honesty policy posted on the course mailing list.              	 
+
+The above details apply to all homework and assignments in this course.              	 
+
+Now to homework #1.
+==============================================================================
+HW1: Due 11:59PM CT September 6
+1.
+What are the differences between statements and expressions. Give examples. What are the benefits and the consequences of using each one of them.
+
+Feel free to read up, but do provide references to where you learn from. The description should be in your own words. If you find some really catchy phrases or quotes you'd like to use, do so, but put them in double quotes along with the name of who said (wrote) it.
+
+Share your own experiences, observations, things that may have intrigued you.
+
+In programming, a statement is a line of code that performs an action, such as printing to the console or assigning a value to a variable. For example, if (/* some expression */) { /* some statements */ } in JavaScript or int x = 5; in Java are statements. They execute an operation, perform a side effect, or affect program flow but do not themselves yield a result that could be used further. Statements are typically used to control program execution, as seen with loops (for, while) or conditionals (if, else).
+
+An expression, on the other hand, is any piece of code that evaluates to a value. For example, 2 + 3 is an expression that evaluates to 5, or x > y, which yields true or false depending on the values of x and y. Expressions can be combined to form more complex expressions or even statements and can be used as inputs to functions, conditions, or other expressions. They are fundamental to functional programming, which emphasizes immutability and declarative code. While expressions are mainly used in functional programming to emphasize immutability and declarative code, they can still produce side effects when used with constructs like monads.
+
+In statement-based imperative languages, controlling the flow of the program is often more straightforward, making debugging easier and handling side effects more manageable. However, statements can make code less predictable since it is syntactically correct to interchange expressions within a statement. For instance, you can use hello, x > y, or x < y in while(/* some expression */) {} which might result in an infinite loop or a loop that runs for longer or shorter than expected without any syntax error.
+
+Extensive use of expressions can negatively impact the readability of code since they lack a clear beginning and end like statements; you can combine as many expressions as you like without error or warning. On the other hand, if expressions are used with proper standards, they can make code more expressive and eliminate unnecessary boilerplate when passing results from function to function.
+
+It is also possible that something that is a statement in one language is an expression in another language (or both a statement and an expression) in another language. For example, the if statement in JavaScript and the if expression in Python. In Python’s if expression, you can assign a variable, e.g., result = 'even' if a % 2 == 0 else 'odd', but this is not possible in JavaScript since if does not return anything.
+
+Different programming styles tend to prefer one over the other. Imperative programming, which focuses on describing "how" to perform tasks, often relies more on statements. For example, in languages like Java or C, developers commonly use statements to create loops or control structures, such as for or while loops, which clearly define step-by-step how to iterate over a collection or execute a set of instructions.
+
+On the other hand, functional programming favors expressions, emphasizing "what" needs to be done in a more declarative and immutable style. In languages like Haskell or Scala, a developer might use a function like map to apply a transformation to a list and return the newly transformed list. Instead of detailing how to traverse the list step-by-step, the map function expresses the operation in one concise expression, focusing on the desired outcome rather than the process.
+
+2. Agree or disagree and discuss your view about the following:
+"A statically typed language verifies the type of variables and objects at compile time. In order for this to work, when programming in a statically typed language, we have to specify the type for each variable or object in code."
+
+Disagree
+
+While it's true that statically typed languages verifies the type of vars and objects at compile time, it is not always necessary to explicitly specify the type for every variable or object. There are languages, like Go, that provide ways for us to keep type safety but do not need to explicitly specify a type.
+
+In Go, for example, the short assignment statement (`:=`) can be used to declare and initialize variables (which can also represent objects) without explicitly specifying their type. The type inference happens at compile time, ensuring that the type safety is maintained.
+
+Ex: (https://go.dev/tour/basics/10)
+
+```
+// both var declarations are valid and won't cause a type error
+
+var i, j int = 1, 2
+c, python, java := true, false, "no!"
+```
+
+This type inference does not make Go a dynamically typed language. Despite the implicit type declarations, Go still enforces strict type rules: all functions require explicit return types, and every expression and statement has a defined type.
+
+
+Total[10]: 10
+
+Please see https://www2.cs.uh.edu/~svenkat/fall2024pl/scores.pdf

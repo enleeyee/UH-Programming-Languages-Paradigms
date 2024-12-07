@@ -1,0 +1,1 @@
+escript question.erl

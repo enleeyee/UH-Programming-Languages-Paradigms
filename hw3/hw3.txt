@@ -1,0 +1,20 @@
+HW3: Due 11:59PM CT November 29
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. What's the difference between polymorphism and multi-methods?
+
+Polymorphism: In object-oriented programming, polymorphism allows methods to exhibit different behavior based on the object they are invoked on at runtime. It relies on the type of the receiver object and is typically achieved through method overriding or interface implementation.
+
+Multi-methods: Multi-methods extend polymorphism by determining method behavior based on the runtime types of all arguments, not just the receiver. Languages like Clojure and Julia natively support multi-methods, while libraries like multimethod for Ruby and multipledispatch for Python allow their usage in other languages.
+
+The choice between polymorphism and multi-methods depends on the problem being solved, design goals, and the language being used. Polymorphism is suitable for OOP paradigms where inheritance and encapsulation are emphasized, and behavior is primarily tied to the receiver object. For example, an Animal class with subclasses Dog and Cat can implement unique sound() methods.
+
+Multi-methods are ideal when behavior depends on the types of two or more arguments, especially when the involved types come from different hierarchies. For instance, a Person (e.g., Child and Mailman) interacting with an Animal (e.g., Dog and Cat) requires behavior to vary dynamically based on the combination of argument types passed to an interact() function.
+
+2. In a language of your choice show a small example to illustrate the difference between the two. Please save the code in a separate file with appropriate extension. Please provide a build file, build.sh, to run it. Do not include any unit tests for this example.
+
+Total[10]: 8
+Need to set apart multimethods from overloading in the example.
+

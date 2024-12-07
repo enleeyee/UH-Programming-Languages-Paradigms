@@ -1,0 +1,19 @@
+(library
+  (name fibonacci_test)
+  (libraries ounit2)
+  (modules Fibonacci_test))
+
+(test 
+  (name iterative_test) 
+  (libraries ounit2 iterative fibonacci_test)
+  (modules Iterative_test))
+
+(test 
+  (name recursive_test) 
+  (libraries ounit2 recursive fibonacci_test)
+  (modules Recursive_test))  
+
+(test 
+  (name tailRecursive_test) 
+  (libraries ounit2 tailRecursive fibonacci_test)
+  (modules TailRecursive_test))  

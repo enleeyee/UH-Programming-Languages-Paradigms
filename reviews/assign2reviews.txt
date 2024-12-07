@@ -1,0 +1,181 @@
+[Reviewed 10/03/24 15:09 PM MDT]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in files.
+
+===> Verifying dependencies...
+===> Analyzing applications...
+===> Compiling extra_test
+===> Performing EUnit tests...
+===> Error Running EUnit Tests:
+  Module `recursive_test' not found in project.
+  Module `tail_recursive_test' not found in project.
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/24 15:15 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please remove prints.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/24 05:52 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far. Let's move forward to the next function.
+
+------------------------------------------------------------------------------
+[Reviewed 09/30/24 05:53 AM MDT]
+synopsis: let's use iteration
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/29/24 07:23 AM MDT]
+synopsis: build not reporting failure of tests
+
+details:
+
+I changed 
+
+  (10, [1; 1; 2; 3; 5; 8; 13; 21; 34; 55; 89])
+to
+  (10, [1; 1; 2; 3; 5; 8; 13; 21; 34; 55; 189])
+
+to see if the test fails. Running build.sh did not report any failure after the change was saved.
+
+------------------------------------------------------------------------------
+[Reviewed 09/28/24 18:20 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/28/24 04:33 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far. Let's get started with the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/27/24 13:30 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/27/24 08:09 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far. Let's move forward to the next function.
+
+------------------------------------------------------------------------------
+[Reviewed 09/27/24 04:33 AM MDT]
+synopsis~: let's not mix iteration (map) with recursion
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/26/24 20:02 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/26/24 05:54 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far. Let's move forward to the next function.
+
+------------------------------------------------------------------------------
+[Reviewed 09/25/24 06:25 AM CDT]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/24 05:31 AM CDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/24 14:07 PM MDT]
+synopsis: error running the build
+
+details:
+
+Warning: Unknown/unsupported 'ghc' version detected (Cabal 3.8.1.0 supports
+'ghc' version < 9.6): /usr/local/bin/ghc is version 9.10.1
+Resolving dependencies...
+Error: cabal: Could not resolve dependencies:
+[__0] trying: uhplfib-0.1.0.0 (user goal)
+[__1] next goal: base (dependency of uhplfib)
+[__1] rejecting: base-4.20.0.0/installed-inplace (conflict: uhplfib =>
+base^>=4.17.0.0)
+[__1] skipping: base-4.20.0.1, base-4.20.0.0, base-4.19.1.0, base-4.19.0.0,
+base-4.18.2.1, base-4.18.2.0, base-4.18.1.0, base-4.18.0.0 (has the same
+characteristics that caused the previous version to fail: excluded by
+constraint '^>=4.17.0.0' from 'uhplfib')
+[__1] rejecting: base-4.17.2.1, base-4.17.2.0, base-4.17.1.0, base-4.17.0.0,
+base-4.16.4.0, base-4.16.3.0, base-4.16.2.0, base-4.16.1.0, base-4.16.0.0,
+base-4.15.1.0, base-4.15.0.0, base-4.14.3.0, base-4.14.2.0, base-4.14.1.0,
+base-4.14.0.0, base-4.13.0.0, base-4.12.0.0, base-4.11.1.0, base-4.11.0.0,
+base-4.10.1.0, base-4.10.0.0, base-4.9.1.0, base-4.9.0.0, base-4.8.2.0,
+base-4.8.1.0, base-4.8.0.0, base-4.7.0.2, base-4.7.0.1, base-4.7.0.0,
+base-4.6.0.1, base-4.6.0.0, base-4.5.1.0, base-4.5.0.0, base-4.4.1.0,
+base-4.4.0.0, base-4.3.1.0, base-4.3.0.0, base-4.2.0.2, base-4.2.0.1,
+base-4.2.0.0, base-4.1.0.0, base-4.0.0.0, base-3.0.3.2, base-3.0.3.1
+(constraint from non-upgradeable package requires installed instance)
+[__1] fail (backjumping, conflict set: base, uhplfib)
+After searching the rest of the dependency tree exhaustively, these were the
+goals I've had most trouble fulfilling: base, uhplfib
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/24 07:58 AM MDT]
+synopsis: series instead of one value
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 10:03 AM MDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+✓ Haskell 
+✓ OCaml
+- Erlang
+
+Please place code inside a language directory, for example mylang subdirectory if the language name is mylang.
+------------------------------------------------------------------------------

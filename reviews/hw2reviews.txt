@@ -1,0 +1,76 @@
+[Reviewed 10/14/24 18:22 PM MDT]
+synopsis: you're done
+
+details:
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 10/14/24 07:09 AM MDT]
+synopsis: not a good example
+
+details:
+
+3.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/14/24 05:30 AM MDT]
+synopsis: almost there
+
+details:
+
+1.
+
+Good
+
+3.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/24 03:52 AM MDT]
+synopsis: a few improvements
+
+details:
+
+1.
+
+useful both for initialization and assignment to variables
+
+2.
+
+Good
+
+3.
+
+Please see suggestions in files.
+
+4.
+
+Good
+
+------------------------------------------------------------------------------
+[Reviewed 10/12/24 06:54 AM MDT]
+synopsis: good start
+
+details:
+
+1.
+
+Please see suggestions in files.
+
+2.
+
+Please see suggestions in files.
+
+3.
+
+Please see suggestions in files.
+
+4.
+
+rest must be the last parameter when destructuring
+
+------------------------------------------------------------------------------

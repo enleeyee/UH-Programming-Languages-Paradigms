@@ -1,0 +1,13 @@
+Considering Static typing, Dynamic Typing, Strong Typing, and Weak Typing, state the nature of the TypeScript language <https://www.typescriptlang.org/> on these four qualities. Discuss, give reasons for your assessment.
+
+Static: Typescript adds a type system to Javascript by being a superset of JS with type annotations. Even though it supports static typing it is still optional and can still be used as regular dynamic Javascript.
+
+Dynamic: With TS being a superset of JS all of the dynamic typing benefits (and consequences) of a dynamic language. This also allows for a bit of compatibility with existing Javascript codebases. 
+
+Strong: TS promotes strong typing, This means that once a variable is assigned a particular type, TS ensures that operations performed on that variable are appropriate for that type. 
+Weak: TS does not support weak typing. In weakly typed languages, variables can change type implicitly based on context, which can lead to unexpected behavior and errors that are difficult to diagnose.
+
+Typescript in general can be very versatile when trying to use it as either dynamic or static, but this can be a disadvantage since it does not do one thing very well but instead 2 okay things. There needs to be quite some configuration in order to make TS truly strongly typed and even then you can still override rule sets and not follow it.
+
+Total[10]: -5
+TypeScript is statically typed (as there is a compiler) and weakly typed since it translates to JavaScript. The description of weak typing is not correct. It is not about changing type, it is about type checks at runtime.

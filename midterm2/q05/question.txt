@@ -1,0 +1,13 @@
+Observe the following Haskell REPL session:
+
+Prelude> let multiply op1 op2 = op1 * op2
+multiply :: Num a => a -> a -> a
+Prelude>
+
+Explain the details the REPL reported between the two Prelude> lines.
+
+The line between the two Prelude> shows an inferred type signature of the multiply function. 
+
+The word 'multiply' refers to the name of the function and the two colons :: indicate that everything after will denote the function's type. ‘Num a’ means that the var ‘a’ is of type Num (in Haskell this mean that it can be any type which is a number like Integer and Float) and the ‘a -> a -> a’ means that this is a curried function that takes in an argument, returns another function that takes a second argument and finally produces a result (all being of the same type as ‘a’).
+
+Total[10]: 10

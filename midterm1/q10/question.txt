@@ -1,0 +1,14 @@
+A developer shows you a line of valid code:
+
+var max = 1000;
+
+Does this line of code belong to a statically typed language or a dynamically typed language? How can you tell? Discuss.
+
+It can be either a statically or dynamically typed language since some languages have type inference, meaning that it is not necessary to declare the type at assignment since the language is capable of inference the type given the value assigned. Type inference is not exclusive to static or dynamic languages.
+
+For example, in Scala, a statically typed language, we can write var max = 1000, and the program will infer that max is an integer based on the assigned value. However, since Scala is statically typed, any further attempt to assign a value of a different type to max will lead to a compilation error because the type is checked at compile time. The variable’s type is inferred once and then enforced throughout the program, ensuring type safety.
+
+In contrast, in a dynamically typed language like Ruby, the type of the variable is not enforced as strictly. We can reassign max to a different type entirely, and Ruby will not raise an error because it allows variables to change their type dynamically at runtime. In this scenario, the type of max is flexible and can change during the program’s execution without causing type errors.
+
+Total[10]: -3
+Discussion about Ruby is irrelevant since this is not a valid syntax in Ruby.

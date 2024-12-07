@@ -1,0 +1,88 @@
+Assign1: Due 11:59PM CT September 20
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+A lot of help will be provided for those who ask. Do not get stuck on a problem for too long. Please time box. Allow yourself, for example, one hour. If you can't find a solution in that time, ask Venkat for help.
+
+For this assignment we will use three different languages. One has to be a statically typed language. One has to be a dynamically typed language. A third is your choice. Do not pick two languages that are too similar to each other. Please drop an email to Venkat to check if your language choices are OK before you invest too much time into any of them.
+
+Start with one language. Write the code in that language, evolve it using reviews. Once you've completed code in one language and gotten a satisfactory review, then create in second language. Once that's completed, proceed to the third language. Venkat will let you know, during reviews, when it is time to move forward with the second or the third language.
+
+Create files using proper extensions. Also create either a build file or a sh file that will compile (if necessary) and run your code to display the output or show test results automatically. Venkat and your partner should be able to easily run your code with run of one build or sh file. Again, please do not hesitate to ask for help after the time boxed effort.
+
+If you need help with any of the steps, please ask. You do not have to fight with tools or code for a long time. The purpose of this course is to learn. If you're stuck, then ask for help and it will be given. If you start early, you will be able to make much better progress than if you start late.
+
+In each of the languages, create two implementations for a function that will tell whether a number, given as argument, is a perfect number or not.
+
+A perfect number is a number greater than 1 whose factors total to twice the number. For example, the factors of 6 are 1, 2, 3, and 6. The total of these values is 12 which is twice the given number 6.
+
+The first implementation, in each language, should be in imperative style. The second implementation, in each language, should be in functional style with no explicit mutation of variables. Start with a test first and write minimum code to pass the tests after, each step of the way.
+
+After completing the coding (and only after that), answer the following questions:
+
+1. Discuss some of the things you have learned from working on this assignment.
+
+One of the most significant lessons learned was the advantage of having robust, built-in tooling within the programming language you’re using. For instance, in contrast to Python—where there's no built-in parameterized function—Go stands out with its comprehensive built-in testing tools. Go’s built-in testing framework made it the easiest to build and test, as it eliminates the need for external libraries for coverage or managing dependencies, unlike Python (with the need for paver, parametrized, and coverage). Additionally, Go runs and builds generally faster compared to Scala.
+
+However, Go falls short in terms of functional programming support, as it does not provide a built-in functional library at all. This is not surprising, given that Go is a language with a strong emphasis on imperative programming.
+
+This experience highlights the importance of considering a language's standard library. While some languages may simplify certain tasks, others might require third-party libraries for additional functionality. For instance, if you need a language with versatile testing capabilities across different versions, Python and Scala are better options. Scala's build files can specify versions, and Python allows for easy management of different virtual environments. On the other hand, managing different versions in Go can be more challenging.
+
+2. Were there any things that surprised you or things that you did not expect?
+
+It was surprising to find that the implementations were quite similar. Having a clear understanding of the process beforehand made learning the syntax much easier. Our focus shifted to understanding how each language handles tasks, adheres to styling guides, and employs specific thinking patterns unique to the language.
+  
+However, there was a learning curve. Before delving into syntax, we first had to grasp how each program initializes, the specific language environments required, and the essentials of running a build file. Unlike the consistent implementations of perfect numbers across languages, build files varied significantly. Among them, Go had the simplest and most straightforward setup, yet it still required thorough documentation reading and experimentation to find an efficient method.
+
+3. Given this experience, draw a comparison between the imperative style and the functional style.
+
+Regardless of the language, the general approach for each programming style was quite similar.
+
+In the imperative style, a variable was declared to hold the total, followed by a for loop that iterates over the divisors. The sum of the divisors was then calculated, and the function returned whether the input was greater than one and if it equaled the total.
+
+In the functional style, an array or list of numbers was filtered based on a function that checked whether each number was a divisor. The filtered list was then reduced through summation, and the same return condition as in the imperative function was applied.
+
+The primary difference between the two styles lay in the syntax, and notably, Go required a third-party library to implement its functional approach.
+
+4. Given this experience, draw a comparison between static typing and dynamic typing.
+
+Static typing checks variable types at compile time, catching many errors before code execution. This approach offers strong type safety, aids in refactoring, and supports large-scale development, though it often results in more verbose code due to explicit type declarations. Examples of statically typed languages include Scala and Go, where types like `Int` and `bool` are verified at compile time to prevent type mismatches.
+
+Meanwhile, dynamic typing determines types at runtime, allowing for greater flexibility and more concise code since explicit type declarations are not required. However, this flexibility comes with the downside of deferred error detection, potentially leading to runtime failures that necessitate thorough testing. Python is a prime example of a dynamically typed language, where type errors are only discovered during execution.
+
+5. Of the three languages that you used, what are your impressions about each, their strengths, weaknesses, your likes/dislikes.
+
+Python:
+
+Python is a dynamically typed language that prioritizes readability and ease of use. Python’s dynamic nature makes the language highly flexible and ideal for rapid development and scripting. One weakness in Python’s dynamic typing is the debugging difficulty of runtime errors compared to statically typed languages like Go or Scala. Plus, Python’s performance can be a concern in high-performance applications as it will lead to slower execution times. We find Python enjoyable for its readability and excels in data analysis, machine learning, and general scripting tasks. 
+
+Go:
+
+Go is a highly imperative language with great error handling, making it easy to learn and work with straightforward code. Go’s emphasis on imperative programming contributes to its simplicity and clarity. However, this focus can be a drawback if you're aiming to use a functional programming style, as Go lacks native support for many functional programming features. In such cases, you'll need to rely on third-party libraries or custom implementations to achieve functional programming constructs. Despite this limitation, we can see Go being very well-suited for networking applications or web servers due to its clear and predictable program flow.
+
+Scala:
+
+Scala is a highly multi-paradigm language with both functional and object-oriented applications. Its greatest strength is its seamless integration of these paradigms, by combining imperative and functional styles or just choosing one style. However, Scala’s complexity can be a drawback as it has a steep learning curve with syntactic flexibility and slow compile times. We like Scala’s rich type system, especially in functional programming, for complex systems like big data or distributed systems.
+
+Total[100]: 100
+
+Language 1 [30]: 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Language 2 [30]: 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Language 3 [30]: 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Response to questions [10]:

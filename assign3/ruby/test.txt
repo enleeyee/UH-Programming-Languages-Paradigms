@@ -1,0 +1,8 @@
+✓ canary test
+✓ able to evaluate 'schedule meeting' 
+✓ able to add detail "name" to meeting
+✓ able to add detail "start time" to meeting
+✓ able to add detail "end time" to meeting
+✓ able to calculate "duration" of meeting
+✓ able to add detail "date" to meeting 
+✓ able to add detail "participants" to meeting

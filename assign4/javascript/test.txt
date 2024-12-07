@@ -1,0 +1,6 @@
+✓ canary test
+✓ evaluate when the guess number is lower than target number
+✓ evaluate when the guess number is higher than target number
+✓ evaluate when the guess number is the target number
+✓ playGame takes a target, a function that returns the guess, a function that will display the result
+✓ playGame wins on second attempt with first attempt being low 

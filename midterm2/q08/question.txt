@@ -1,0 +1,12 @@
+Suppose we have an immutable list with a 100 elements. We want to create a new 
+list with one new/additional element in the list. Explain how languages that 
+promote immutability handle this and what's the cost (time complexity and 
+space complexity) of creating the new list.
+
+In languages that promote immutability (like Clojure, Haskell, Scala, etc) adding an element to a list does not modify the original list. Instead a new list is created. If not handled correctly this could lead to massive memory usage which is why there are optimized techniques to deal with this.
+
+One such technique is structural sharing, where the new list reuses most of the structure of the original list. Instead of duplicating the entire list, only the new element and the references necessary to connect it to the beginning of the original list are created.
+
+This is why to add an element to a list it usually prepends. Prepending is an operation of O(1) (both space and time complexity) whereas appending would be O(n) (both space and time complexity) since it requires duplicating every element in the list.
+
+Total[10]: 10 

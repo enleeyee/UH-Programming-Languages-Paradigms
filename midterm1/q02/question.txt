@@ -1,0 +1,10 @@
+In a lot of languages a recursion runs into stack overflow errors for very large values. On the other hand, a tail call 
+optimized recursion does not. Why is that? How is that made possible?
+
+During regular recursion, after the recursive call is made, the parent function still has to do work, and to be able to perform that work it has to be remembered. This is when the state of the program gets put onto the stack, generating a deep call stack and possibly stack overflow issues.
+
+Tail Call Optimization is different in that the 'state' is passed on the recursive call, so there is no need to remember that there is more work to be done after the recursive call is done since the recursive call is the last operation. This allows the function to directly return the value of the recursive call.
+
+This is not supported by all languages since the compiler/interpreter also does some work to make this possible. The biggest thing that makes this possible is the ability of the compiler to replace the current function's stack frame with the next, avoiding the stack overflow issue.
+
+Total[10]: 10

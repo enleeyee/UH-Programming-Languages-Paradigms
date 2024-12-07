@@ -1,0 +1,257 @@
+[Reviewed 11/15/24 05:24 AM MST]
+synopsis: you're done
+
+details:
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 11/14/24 06:00 AM MST]
+synopsis: good so far
+
+details:
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/13/24 18:32 PM MST]
+synopsis: good so far
+
+details:
+
+Please see suggestions in files.
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/13/24 06:04 AM MST]
+synopsis: good so far
+
+details:
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/12/24 18:10 PM MST]
+synopsis: good so far
+
+details:
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/12/24 03:34 AM MST]
+synopsis: good so far
+
+details:
+
+JavaScript:
+done
+
+F#:
+
+Good so far
+
+------------------------------------------------------------------------------
+[Reviewed 11/11/24 19:19 PM MST]
+synopsis: Let's think of the user
+
+details:
+
+Guess a number between 1 and 100: 50
+HIGH
+-- Abrupt message
+
+Let's start with the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 11/11/24 07:40 AM MST]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's create a console UI to run the program.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/24 19:01 PM MST]
+synopsis: let's refactor and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/24 06:59 AM MST]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/24 18:09 PM MST]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/24 07:33 AM MST]
+synopsis: tests are doing hard work
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/08/24 16:52 PM MST]
+synopsis: unnecessary code and complexity in test. Also, mutating
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/08/24 05:01 AM CET]
+synopsis: one step at a time
+
+details:
+
+One step at a time.
+
+First test, got the guess on first try.
+Second test, got the guess on the second try.
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/24 22:08 PM CET]
+synopsis: good so far
+
+details:
+
+Good so far. Please see suggestions in files. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/24 21:42 PM CET]
+synopsis: let's tweak the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/24 10:07 AM CET]
+synopsis: let's change direction
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/24 07:19 AM CET]
+synopsis: let's see how this goes
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/24 06:52 AM CET]
+synopsis: let's refactor and move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/24 00:39 AM CST]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/24 05:34 AM MST]
+synopsis: Can we refactor?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/24 17:48 PM MST]
+synopsis: let's move forward
+
+details:
+
+Let's move forward to two more tests.
+
+>./build.sh
+> ./build.sh 
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/config-array@0.18.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.6.1', npm: '7.20.3' }
+npm WARN EBADENGINE }
+...
+
+> lint
+> eslint .
+
+
+Oops! Something went wrong! :(
+
+ESLint: 9.14.0
+
+TypeError: Object.hasOwn is not a function
+...
+
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/24 17:30 PM MST]
+synopsis: string is a poor way to model
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/24 04:32 AM MST]
+synopsis: let's focus on the essence
+
+details:
+
+Please see suggestions in files.
+
+ ./build.sh 
+
+> lint
+> eslint .
+
+
+Oops! Something went wrong! :(
+
+ESLint: 9.14.0
+
+TypeError: Object.hasOwn is not a function
+
+
+------------------------------------------------------------------------------
+[Reviewed 11/01/24 19:03 PM MDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+✓JavaScript
+-F#
+
+
+Please place code inside a language directory, for example mylang subdirectory if the language name is mylang.
+------------------------------------------------------------------------------

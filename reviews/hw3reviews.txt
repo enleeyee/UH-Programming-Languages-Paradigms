@@ -1,0 +1,63 @@
+[Reviewed 11/28/24 05:39 AM MST]
+synopsis: let's rethink
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/27/24 07:17 AM MST]
+synopsis: still quite not an instance method
+
+details:
+
+build.sh
+
+Can we not ask lein to run the code instead of having to create a jar and have to run java?!!
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/26/24 06:41 AM MST]
+synopsis: Please see previous review
+
+details:
+
+> ./build.sh 
+./build.sh: line 3: clojure: command not found
+
+Please see previous review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/25/24 08:10 AM MST]
+synopsis: let's clarify
+
+details:
+
+> ./build.sh 
+./build.sh: line 3: clojure: command not found
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/24/24 06:36 AM MST]
+synopsis: let's see
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/23/24 06:29 AM MST]
+synopsis: good so far
+
+details:
+
+1.
+
+Nice work.
+
+2.
+Let's show this without use of any libraries.
+
+------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+node_modules
+package-lock.json
+
+/Debug/, /obj/, package-lock.json, .zip, .class, .exe, .pdb, .lock, /node_modules/, /build/, /.gradle/, radon.report, .DS_STORE, .DS_Store, __init__.py, .coverage, /project/, /target/, /cover/, /dist/, /__pycache__/, /dist-newstyle/
